@@ -8,10 +8,6 @@ using namespace std;
 int N;
 pair<int, int> ST[200001];
 
-bool compare(pair<int, int> first, pair<int, int> second) {
-	return first.second < second.second;
-}
-
 int main() {
 	int i, t, count(1);
 	pair<int, int> st;
