@@ -7,7 +7,7 @@ int dolls[500];
 
 int main() {
 	int N, K, i, j;
-	double m, v, min(500 * 1E6);
+	double m, v, min(1E12);
 
 	scanf("%d %d", &N, &K);
 
