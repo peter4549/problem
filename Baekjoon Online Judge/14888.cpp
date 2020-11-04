@@ -14,10 +14,8 @@ bool used[10];
 vector<int> v;
 long long maximumResult(-1E9), mininumResult(1E9);
 
-int swit = 0;
-
-void dfs(int n, int depth) {
-	if (depth == N - 1) {
+void backtrack(int n) {
+	if (n == N - 1) {
 		int i(1);
 		vector<int> temporaryV = v;
 		
@@ -49,7 +47,7 @@ void dfs(int n, int depth) {
 		if (!used[i]) {
 			v.push_back(B[i]);
 			used[i] = true;
-			dfs(i, depth + 1);
+			backtrack(n + 1);
 			v.pop_back();
 			used[i] = false;
 		}
@@ -79,7 +77,7 @@ int main() {
 		if (!used[i]) {
 			v.push_back(B[i]);
 			used[i] = true;
-			dfs(i, 1);
+			backtrack(1);
 			v.pop_back();
 			used[i] = false;
 		}
