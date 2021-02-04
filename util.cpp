@@ -22,3 +22,6 @@ int intlen(int n) {
 
 	return m;
 }
+
+
+transform(city.begin(), city.end(), city.begin(), ::tolower);
