@@ -11,3 +11,14 @@ void rotate() {
 		}
 	}
 }
+
+int intlen(int n) {
+	int m(0);
+	
+	do {
+		n = int(n / 10);
+		++m;
+	} while (n > 0);
+
+	return m;
+}
