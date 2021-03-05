@@ -4,12 +4,13 @@
 using namespace std;
 
 int main() {
+	int i(0);
 	string word;
 
 	cin >> word;
 
-	for (int i(1); i <= word.length(); ++i) {
-		cout << word.at(i - 1);
+	while (i < word.length()) {
+		cout << word.at(i++);
 
 		if (i % 10 == 0)
 			cout << endl;
